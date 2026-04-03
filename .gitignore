@@ -2,3 +2,6 @@
 no.env
 .env
 node_modules/
+no.env
+no.env
+dist/
