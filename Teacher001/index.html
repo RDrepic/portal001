@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teacher Portal</title>
+        <link rel="stylesheet" href="no.css">
+        <script type="module" src="no.js"></script>
+    </head>
+    <body>
+        <div class="main">
+            <div id="login">
+             <h1>Teacher Login</h1>
+                <form id="loginForm">
+                    <div id="loginError" class="error-message"></div>
+                    <label for="email">Username or Email</label>
+                    <input type="email" id="email" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <div id="Dashboard">
+                <h2>Teacher Dashboard</h2>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Name" required>
+
+                <label for="phone">Contact</label>
+                <input type="tel" id="phone" placeholder="Contact" required>
+
+               <div>
+                 <section>
+                    <fieldset class="subjects-group">
+                        <legend>Subjects (choose one or more)</legend>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="subjects" value="English">
+                            <span class="checkmark"></span>
+                            English
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="subjects" value="Social">
+                            <span class="checkmark"></span>
+                            Social
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="subjects" value="Maths">
+                            <span class="checkmark"></span>
+                            Maths
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="subjects" value="Science">
+                            <span class="checkmark"></span>
+                            Science
+                        </label>
+                    </fieldset>
+
+                    <button type="button" id="submitBtn">Submit</button>
+                 </section>
+               </div>
+            </div>
+        </div>
+    </body>
+</html>
