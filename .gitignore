@@ -5,3 +5,4 @@ node_modules/
 no.env
 no.env
 dist/
+.env.example
