@@ -19,15 +19,7 @@ async function loadFirebaseConfig() {
       .map(([key, ...rest]) => [key, rest.join('=').trim()])
   );
 
-  return {
-    apiKey: kv.FIREBASE_API_KEY,
-    authDomain: kv.FIREBASE_AUTH_DOMAIN,
-    projectId: kv.FIREBASE_PROJECT_ID,
-    storageBucket: kv.FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: kv.FIREBASE_MESSAGING_SENDER_ID,
-    appId: kv.FIREBASE_APP_ID,
-    measurementId: kv.FIREBASE_MEASUREMENT_ID
-  };
+
 }
 
 async function initFirebase() {
